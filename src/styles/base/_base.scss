@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+.title {
+  @include font($size: 4.5rem, $height: 5rem, $weight: 700);
+  @extend %font-primary;
+}
+
+.title__section {
+  @include font($size: 4rem, $height: 5.212rem);
+  @extend %font-add;
+  color: $title;
+
+  @include media-tablet {
+    @include font($size: 3.5rem, $height: 4.6rem);
+  }
+
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.3rem);
+  }
+}
+
+.title_colored{
+  color: $title-colored;
+}
+
+a {
+  text-decoration: none;
+  color: #010201;
+  @extend %transition;
+
+  &:hover {
+    cursor: pointer;
+    color: $title-colored;
+  }
+}
+
+.scroll-stop {
+  overflow: hidden;
+}

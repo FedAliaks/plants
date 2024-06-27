@@ -1,0 +1,67 @@
+.we-are{
+  background-color: $color-light;
+}
+
+.we-are__section{
+  @extend %flex;
+  padding: 93px 0 88px;
+
+  @include media-tablet {
+    flex-direction: column;
+    padding: 30px 0 95px;
+  }
+
+  @include media-mobile {
+    padding: 20px 0 33px;
+  }
+}
+
+.we-are__title{
+  width: 463px;
+  padding-bottom: 38px;
+
+  @include media-tablet {
+    padding-bottom: 50px;
+    text-align: center;
+    width: 423px;
+    margin: 0 auto;
+  }
+
+  @include media-mobile {
+    width: 100%;
+    padding-bottom: 14px;
+  }
+}
+
+.we-are__content-column{
+  width: 605px;
+  padding-top: 10px;
+
+  @include media-tablet {
+    width: 100%;
+  }
+}
+
+.we-are__content{
+  @include font($size: 2rem, $height: 3rem);
+  @extend %font-primary;
+
+  @include media-mobile {
+    @include font($size: 1.5rem, $height: 2.5rem);
+  }
+}
+
+.we-are__image{
+  @include media-tablet{
+    display: block;
+    padding-top: 68px;
+    width: 250px;
+    height: 258px;
+  }
+
+  @include media-mobile{
+    padding-top: 0;
+    width: 150px;
+    height: 147px;
+  }
+}

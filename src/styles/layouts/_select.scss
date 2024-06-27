@@ -1,0 +1,111 @@
+.select-block {
+  position: relative;
+}
+
+.select__head_active{
+  background-color: #C1E698;
+}
+
+.select__body{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  display: none;
+  background: #DCE9D9;
+}
+
+.select__body_active {
+  display: block;
+}
+
+.select__item{
+  margin: 5px 30px 5px 40px;
+  @extend %font-primary;
+  @include font($size: 1.6rem, $style: normal, $height: 4rem, $weight: 400);
+  letter-spacing: 0.05em;
+  color: $title;
+  border-bottom: 1px solid transparent;
+  @extend %transition;
+
+  &:hover {
+    color: $color;
+    border-bottom: 1px solid $color;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.select-card{
+  display: none;
+  margin-top: 50px;
+  width: 448px;
+  height: 214px;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+.select-card_active{
+  display: block;
+}
+
+
+.select-card__city{
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  padding: 17px 76px 0px 37px;
+}
+
+.select-card__title{
+  @extend %font-primary;
+  @include font($size: 1.6rem, $weight: 400, $height: 4rem, $style: normal);
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.select-card__content{
+  @extend %font-primary;
+  @include font($size: 1.6rem, $weight: 400, $height: 4rem, $style: normal);
+  letter-spacing: 0.05em;
+  color: $color;
+
+}
+
+.select-card__button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 0;
+  width: 122px;
+  height: 26px;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+}
+
+.select-card__button-title{
+  @extend %font-add;
+  @include font($size: 1rem, $weight: 700, $height: 1.3rem, $style: normal);
+  color: $color;
+
+}

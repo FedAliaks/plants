@@ -1,0 +1,52 @@
+.hamburger {
+  display: none;
+  position: relative;
+  z-index: 10;
+  right: 4px;
+  width: 38px;
+  height: 24px;
+  bottom: 10px;
+
+  @include media-mobile{
+    display: block;
+  }
+}
+
+.hamburger__line{
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  width: 38px;
+  border: 2px solid $color;
+  background-color: $color;
+  @extend %transition;
+}
+
+.hamburger span:nth-of-type(2) {
+	top: 13px;
+}
+
+.hamburger span:nth-of-type(3) {
+	top: 21px;
+}
+
+.last__line {
+	top: 29px;
+}
+
+.line__close{
+  display: none;
+}
+
+.rotate_first {
+  transform: rotate(45deg);
+  top: 15px;
+}
+
+.rotate_last {
+  transform: rotate(-45deg);
+  top: 15px;
+}
+
+
+

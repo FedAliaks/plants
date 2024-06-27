@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/resource/favicon.ico" type="image/x-icon">
+  <title>Plants</title>
+</head>
+<body>
+  <header class="header">
+    <div class="wrapper header__section">
+      <div class="header__title-block">
+        <object type="image/svg+xml" data="./assets/svg/logo.svg" class="header__logo-svg">
+          Your browser does not support SVG
+        </object>
+        <p class="header__title">Plants</p>
+      </div>
+      <nav class="header__navigation">
+        <ul class="header__navigation-block">
+          <li class="header__navigation-item item-active">Home</li>
+          <li class="header__navigation-item">
+            <a href="#about-us">About us</a>
+          </li>
+          <li class="header__navigation-item">
+            <a href="#service">Service</a></li>
+          <li class="header__navigation-item">
+            <a href="#price">Price</a></li>
+          <li class="header__navigation-item">
+            <a href="#contact">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line last__line"></span>
+      </div>
+      <div class="adaptive__field">
+        <div class="adaptive__menu">
+          <ul class="adaptive__navigation-block">
+            <li class="header__navigation-item item-active">Home</li>
+            <li class="header__navigation-item">
+              <a href="#about-us" data-item="item">About us</a>
+            </li>
+            <li class="header__navigation-item">
+              <a href="#service" data-item="item">Service</a></li>
+            <li class="header__navigation-item">
+              <a href="#price" data-item="item">Price</a></li>
+            <li class="header__navigation-item">
+              <a href="#contact" data-item="item">Contacts</a></li>
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <section class="grow-plants">
+      <div class="grow-plants_section">
+        <div class="grow-plants__image-block">
+          <img class="grow-plants__image" src="./assets/images/leafs-big.png" alt="img">
+        </div>
+        <div class="grow-plants_content-block">
+          <h1 class="title__page">We grow <span class="title__page_colored">plants</span> and give you oxygen</h1>
+          <p class="grow-plants__content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s.</p>
+          <button class="grow-plants__button">Learn more</button>
+        </div>
+      </div>
+    </section>
+    <section class="we-are" id="about-us">
+      <div class="wrapper we-are__section">
+        <div class="we-are__content-column">
+          <h2 class="title__section we-are__title">We are <span class="title_colored">professional experienced</span> gardeners</h2>
+          <p class="we-are__content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+             It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+        </div>
+        <div>
+          <img class="we-are__image" src="./assets/images/plant.png" alt="img">
+        </div>
+      </div>
+    </section>
+    <section class="services" id="service">
+      <div class="wrapper services__section">
+        <div class="services__title-block">
+          <h2 class="title__section services__title">Service and our projects</h2>
+          <div class="services__button-block">
+            <button class="button service__button">Gardens</button>
+            <button class="button service__button">Lawn</button>
+            <button class="button service__button">Planting</button>
+          </div>
+        </div>
+        <div class="services__services-list">
+        </div>
+      </div>
+    </section>
+    <section class="prices" id="price">
+      <div class="wrapper prices__section">
+        <div class="prices__left-column">
+          <h2 class="prices__title prices__title-left">Prices</h2>
+          <div class="prices__button-section">
+            <div class="accordion" data-set="price-button-1">
+              <div class="accordion__title">
+                <div class="prices__button" data-set="price-button-1">
+                  <p class="prices__button-name" data-set="price-button-1">Basics</p>
+                  <div class="prices__button-arrow" data-set="price-button-1">
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__content accordion__content_close" data-accordion="1">
+                <p class="accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="accordion__price"><span class="accordion__sum">$15</span>/ per hour</p>
+                <a href="#contact" class="accordion__button">Order</a>
+
+              </div>
+            </div>
+            <div class="accordion" data-set="price-button-2">
+              <div class="accordion__title">
+                <div class="prices__button">
+                  <p class="prices__button-name">Standard</p>
+                  <div class="prices__button-arrow" data-set="price-button-2">
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__content accordion__content_close " data-accordion="2">
+                <p class="accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="accordion__price"><span class="accordion__sum">$25</span>/ per hour</p>
+                <a href="#contact" class="accordion__button">Order</a>
+              </div>
+            </div>
+            <div class="accordion" data-set="price-button-3">
+              <div class="accordion__title">
+                <div class="prices__button">
+                  <p class="prices__button-name">Pro care</p>
+                  <div class="prices__button-arrow" data-set="price-button-3">
+                    <span class="arrow"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion__content accordion__content_close" data-accordion="3">
+                <p class="accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                <p class="accordion__price"><span class="accordion__sum">$35</span>/ per hour</p>
+                <a href="#contact" class="accordion__button">Order</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="prices__right-column">
+          <p class="prices__title price__title-right">Our best <span class="title__page_colored">gardeners</span> are ready to help you</p>
+          <button class="button prices__right-button">Contact us</button>
+          <img src="./assets/images/leafs-small.png" alt="image" class="prices__image">
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="wrapper contact-container">
+        <img class="contact__image" src="./assets/images/woman.png" alt="image">
+        <h2 class="title__section contact__title">Contact us</h2>
+
+
+        <div class="select-block">
+          <div class="select__header contact__button">
+            <div class="contact__button-name">City</div>
+            <div class="contact__button-arrow">
+              <span class="arrow contact__arrow"></span>
+            </div>
+          </div>
+          <div class="select__body">
+            <div class="select__item" data-city="canandaigua">Canandaigua, NY</div>
+            <div class="select__item" data-city="new-york">New York City</div>
+            <div class="select__item" data-city="yorkers">Younkers, NY</div>
+            <div class="select__item" data-city="sherrill">Sherrill, NY</div>
+          </div>
+
+          <div class="select-card">
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+<!--         <div class="city-block">
+          <select name="city" id="city" class="contact__button" id="select">
+            <option value="city" class="contact__button-name">City</option>
+            <option value="canandaigua" class="contact__list-item">Canandaigua, NY</option>
+            <option value="new-york" class="contact__list-item">New York City</option>
+            <option value="yorkers" class="contact__list-item">Younkers, NY</option>
+            <option value="sherrill" class="contact__list-item">Sherrill, NY</option>
+          </select>  
+          <div class="select-card">
+          </div>
+
+        </div> -->
+
+
+
+
+
+
+
+<!--         <div class="contact__button">
+          <p class="contact__button-name">City</p>
+          <div class="contact__button-arrow">
+            <span class="arrow"></span>
+          </div>
+        </div>
+ -->
+
+
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrapper footer__section">
+      <div class="footer__left-column">
+        <p class="footer__content">&#169;</p>
+        <p class="footer__content">2022</p>
+        <p class="footer__content">
+          <a href="https://github.com/fedaliaks" target="_blank">github</a>
+        </p>
+      </div>
+      <p class="footer__content footer__content-rs">
+        <a href="https://rs.school/js-stage0/">Rolling Scopes School</a>
+      </p>
+      <ul class="footer__svg-block">
+        <li>
+          <a  class="footer__svg-block_item"><a href="https://www.instagram.com/explore/tags/rollingscopes/" target="_blank">
+            <svg class="icon">
+              <use xlink:href="./assets/svg/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+
+      </li>
+        <li>
+          <a  href="https://www.facebook.com/groups/TheRollingScopes/" target="_blank">
+          <svg class="icon">
+            <use xlink:href="./assets/svg/sprite.svg#facebook"></use>
+          </svg>
+          </a>
+        </li>
+        <li>
+          <a class="footer__svg-block_item"><a href="https://twitter.com/rollingscopes" target="_blank">
+            <svg class="icon">
+              <use xlink:href="./assets/svg/sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/therollingscopes?reload=9" target="_blank">
+            <svg class="icon">
+              <use xlink:href="./assets/svg/sprite.svg#pinterest"></use>
+            </svg>
+          </a>
+        </li>
+    </div>
+  </footer>
+</body>
+</html>

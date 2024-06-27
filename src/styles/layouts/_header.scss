@@ -1,0 +1,47 @@
+.header {
+  background-color: $background-section;
+}
+
+.header__section{
+  @extend %flex;
+  padding: 42px 0;
+
+  @include media-tablet {
+    padding: 35px 0;
+  }
+}
+
+.header__title-block{
+  @extend %flex;
+}
+
+.header__logo-svg{
+  margin-bottom: 8px;
+}
+
+.header__title{
+  @extend %font-primary;
+  @include font($size: 1.6rem, $height: 2.1rem);
+}
+
+.header__navigation-item {
+  @extend %font-primary;
+  @include font($size: 1.6rem, $height: 5rem);
+}
+
+.item-active{
+  color: $title-colored;
+}
+
+.header__navigation{
+  max-width: 452px;
+  flex-grow: 1;
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.header__navigation-block{
+  @extend %flex;
+}

@@ -1,0 +1,102 @@
+.grow-plants{
+  background-color: $background-section;
+}
+
+.grow-plants_section{
+  @extend %flex;
+  padding: 55px 0 51px;
+  max-width: 1240px;
+  margin: 0 auto;
+
+  @include media-tablet {
+    flex-direction: row-reverse;
+    width: 87%;
+    padding: 38px 0 69px;
+  }
+
+  @include media-mobile {
+    padding: 22px 0 24px;
+  }
+}
+
+.grow-plants_content-block{
+  width: 558px;
+}
+
+.grow-plants__image-block{
+  @include media-tablet {
+  }
+}
+
+.grow-plants__image{
+  @include media-tablet {
+    display: block;
+    width: 280px;
+    height: 254px;
+    padding-bottom: 55px;
+  }
+
+  @include media-mobile {
+    display: none;
+  }
+}
+
+.title__page{
+  @extend %font-primary;
+  @include font($size: 4.5rem, $height: 5rem, $weight: 700);
+  color: $color;
+
+  @include media-tablet {
+    @include font($size: 3.5rem, $height: 5rem, $weight: 700);
+  }
+
+  @include media-mobile {
+    @include font($size: 2.5rem, $height: 3.5rem, $weight: 700);
+  }
+}
+
+.title__page_colored{
+  color: $title;
+}
+
+.grow-plants__content{
+  padding: 42px 25px 48px 0;
+  @extend %font-primary;
+  @include font($size: 2rem, $height: 3.5rem);
+  color: $text-color;
+
+  @include media-tablet {
+    @include font($size: 1.6rem, $height: 2.5rem);
+    padding: 30px 32px 36px 5px;
+  }
+
+  @include media-mobile {
+    padding: 20px 10px 26px 5px;
+  }
+}
+
+.grow-plants__button{
+  width: 158px;
+  height: 44px;
+  background-color: transparent;
+  border: 2px solid #E06733;
+  border-radius: 10px;
+  @extend %font-primary;
+  @include font($size: 1.6rem, $height: 2rem);
+  text-transform: uppercase;
+  color: $color-dark;
+
+  @extend %transition;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $title-colored;
+    color: $color-light;
+  }
+
+  @include media-mobile {
+    width: 100px;
+    height: 34px;
+    @include font($size: 1rem, $height: 2rem);
+  }
+}

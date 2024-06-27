@@ -1,0 +1,95 @@
+.contact{
+  background-color: $background-section;
+}
+
+.contact-container{
+  @extend %flex;
+  align-items: flex-start;
+  padding-top: 53px;
+
+  @include media-tablet {
+    flex-direction: column-reverse;
+    padding-top: 40px;
+  }
+
+  @include media-mobile{
+    padding-top: 27px;
+  }
+}
+
+.contact__image{
+  @include media-tablet{
+    margin: 0 auto;
+    width: 200px;
+    height: 249px;
+    padding-left: 18px;
+  }
+
+  @include media-mobile {
+    width: 100px;
+    height: 124px;
+    padding-left: 0;
+  }
+}
+
+.contact__title{
+  font-weight: 700;
+  padding: 5px 0 0 40px;
+  @extend %font-add;
+
+  @include media-tablet{
+    padding: 0;
+    margin: 0 auto;
+    width: 250px;
+    text-align: center;
+    @include font($size: 4rem, $height: 5.212rem);
+    order: 1;
+  }
+
+  @include media-mobile{
+    @include font($size: 2.5rem, $height: 3.3rem);
+  }
+}
+
+
+.contact__button{
+  @extend %flex;
+  box-sizing: border-box;
+  padding: 0 33px 0 20px;
+  margin-top: 93px;
+  width: 450px;
+  height: 50px;
+  background: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px;
+  border: none;
+
+  @include media-tablet{
+    margin: 100px auto 250px;
+  }
+
+  @include media-mobile {
+    width: 300px;
+    margin: 80px auto 132px;
+    padding: 0 21px 0 18px;
+  }
+}
+
+.contact__button-name{
+  @extend %font-primary;
+  @include font($size: 2rem, $height: 4rem);
+  color: $color;
+}
+
+.contact__button-arrow{
+  @extend %flex-center;
+  width: 16px;
+  height: 16px;
+  background: #AEA1A1;
+  border: 0.5px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.contact__arrow_transform {
+  transform: rotate(180deg);
+}

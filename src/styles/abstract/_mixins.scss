@@ -1,0 +1,23 @@
+%font-primary {
+  font-family: Inter, Roboto, sans-serif;
+}
+
+%font-add {
+  font-family: Inika, Roboto, sans-serif;
+}
+
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%transition {
+  transition: all .5s;
+}

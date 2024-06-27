@@ -1,0 +1,55 @@
+.accordion {
+  width: 250px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: $background-section;
+
+  @include media-mobile {
+    width: 180px;
+    padding: 0 38px 0 30px;
+  }
+}
+
+.accordion__content{
+  border-top: 0.5px solid $color-according-border;
+  padding: 6px 0px 12px;
+}
+
+
+
+.accordion__text{
+  @extend %font-primary;
+  @include font($size: 1rem, $weight: 300, $height: 1rem);
+}
+
+.accordion__price{
+  padding: 6px 0px 12px;
+  @extend %font-primary;
+  @include font($size: 1.2rem, $weight: 400, $height: 2rem);
+
+}
+
+.accordion__sum{
+  @extend %font-primary;
+  @include font($size: 1.6rem, $weight: 700, $height: 2rem);
+  color: $title-colored;
+}
+
+.accordion__button{
+  display: block;
+  text-align: center;
+  width: 86px;
+  height: 25px;
+  background-color: $color-light;
+  border-radius: 10px;
+  border: none;
+
+  @extend %font-primary;
+  @include font($size: 1.4rem, $weight: 700, $height: 2rem);
+  color: $color;
+}
+
+.accordion__content_close {
+  display: none;
+}
